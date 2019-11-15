@@ -1,0 +1,69 @@
+Q1 Marks Sheet
+===================================================   
+    name_of_student = input("Enter Name.......")
+    English_1 = int(input("Enter marks for English..."))
+    Urdu_1 = int(input("Enter marks for Urdu..."))
+    Science_1 = int(input("Enter marks for Science..."))
+    Maths_1 = int(input("Enter marks for Maths..."))
+    Total = English_1+Urdu_1+Maths_1+Science_1
+    Percentage = Total//4
+    print("Total marks out of 400....",Total)
+    print("Percentage......", Percentage)
+    if Percentage>90:
+        print("Grade-A")
+    elif Percentage >80 and Percentage <=90:
+        print("Grade-B")
+    elif Percentage >70 and Percentage <=80:
+        print("Grade-C")
+    elif Percentage >60 and Percentage <=70:
+        print("Grade-D")
+    elif Percentage <50:
+        print("Fail")
+=====================================================
+
+Q2 Even or Odd number
+======================
+check_number = int(input("Enter Number....."))
+even_or_odd = check_number%2
+if even_or_odd > 0:
+  print("Number is Odd")
+else:
+  print("Number is Even")
+=====================================
+
+Q3 Length of the list
+=====================================
+names = ["asif","kashif",15,"Ayaz","Arif",100]
+print(len(names))
+====================================
+
+Q4 Sum of all numeric items in a list
+=====================================
+numbers = [1,2,3]
+print(sum(numbers))
+
+=====================================
+
+Q5 Find Largest #
+===================
+numbers_list = [2,666,2,123,77]
+s=len(numbers_list)
+largest_number = 0
+for a in range(s):
+    number_in_list = numbers_list[a]
+    if (largest_number < number_in_list):
+        largest_number = number_in_list
+
+print(largest_number)
+============================================
+
+Q6 Elements less than 5
+=============================================
+numbers_list = [1,1,2,3,5,8,13,21,34,55,89]
+s=len(numbers_list)
+number_five = 5
+for a in range(s):
+    number_in_list = numbers_list[a]
+    if (number_five > number_in_list):
+        print(number_in_list)
+        
